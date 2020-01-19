@@ -1,0 +1,116 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css">
+
+        <!-- <link rel="stylesheet" type="text/css" href="scripts/libs/node_modules/bootstrap/dist/css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="scripts/libs/node_modules/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="scripts/libs/node_modules/datatables/media/css/jquery.dataTables.min.css"> -->
+        <link rel="stylesheet" href="site.css">
+        <title>Coffee Menu</title>
+        <link rel="icon" type="image/ico" href="images/iconcafe.png" />
+    </head>
+    <body class="bg-dark">
+        <div class="container">
+            <h2 >Coffee Menu</h2>
+            <div class="row  mt-3">   
+                    <a href="javascript:;" class="btn btn-info" 
+                        onclick="menu.openModal()">Create Item</a>
+            </div>
+           
+            <div class="row mt-3 table-responsive">
+                <table class="table table-bordered table-hover table-warning table-striped" id="mytable">
+                    <thead>
+                        <tr>
+                            <th>STT</th>
+                            <th>Name</th>
+                            <th>Avatar</th>
+                            <th>Price</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbmenu">
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- The Modal -->
+        <div class="modal" id="addEditmenu">
+            <div class="modal-dialog">
+                <div class="modal-content">
+            
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h4 class="modal-title">Create menu</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+            
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <form id="formAddEditmenu">
+                            <input hidden name="id" id="id" value="0">
+                            <div class="row form-group">
+                                <div class="col-3">
+                                    <label>Name</label>
+                                </div>
+                                <div class="col-9">
+                                    <input class="form-control" type="text" 
+                                    name="Name" id="Name"
+                                    data-rule-required=true >
+                                </div>
+                            </div>
+                            <div class="row form-group">
+                                <div class="col-3">
+                                    <label>Avatar</label>
+                                </div>
+                                <div class="col-9">
+                                    <span class="custom-file" id="Avatar" name="Avatar"></span">
+                                    <div>
+                                        <input id="fileAvatar" type="file" class="custom-file-input" accept="image/gif, image/jpeg, image/png"
+                                        onchange="menu.uploadAvatar(this);">
+                                        <label class="custom-file-label" for="fileAvatar">...</label>
+                                    </div>
+                                </div>
+                            </div>
+                
+                            <div class="row form-group">
+                                <div class="col-3">
+                                    <label>Price</label>
+                                </div>
+                                <div class="col-9">
+                                    <input class="form-control" type="number" name="Price" id="Price" min="0"
+                                    data-rule-required=true>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+            
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                        <a href="javascript:;" class="btn btn-primary" 
+                        onclick="menu.save()">Save</a>
+
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    </div>
+            
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/5.4.0/bootbox.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js"></script>
+
+    <!-- <script src="scripts/libs/node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="scripts/libs/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="scripts/libs/node_modules/jquery-validation/dist/jquery.validate.js"></script>
+    <script src="scripts/libs/node_modules/bootbox/dist/bootbox.min.js"></script>
+    <script src="scripts/libs/node_modules/datatables/media/js/jquery.dataTables.min.js"></script> -->
+    <script src="scripts/menu.js"></script>
+</html>

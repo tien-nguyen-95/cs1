@@ -1,0 +1,82 @@
+{
+  "Menu": [
+    {
+      "Name": "Lavie",
+      "Avatar": "images/water.jpg",
+      "Price": "21000",
+      "id": 3
+    },
+    {
+      "Name": "Capuchino",
+      "Avatar": "images/capuchino.jpg",
+      "Price": "30000",
+      "id": 4
+    },
+    {
+      "Name": "Trà",
+      "Avatar": "images/tea.jpg",
+      "Price": "10000",
+      "id": 5
+    },
+    {
+      "Name": "Cà phê Trứng",
+      "Avatar": "images/eggcoffe.jpg",
+      "Price": "25000",
+      "id": 6
+    },
+    {
+      "Name": "Nước chanh",
+      "Avatar": "images/lemon.jpg",
+      "Price": "20000",
+      "id": 7
+    },
+    {
+      "Name": "Thuốc lào",
+      "Avatar": "images/lao.jpg",
+      "Price": "3000",
+      "id": 8
+    },
+    {
+      "Name": "Cam Vắt",
+      "Avatar": "images/cam.jpg",
+      "Price": "25000",
+      "id": 9
+    },
+    {
+      "Name": "Sinh tố lúa mạch",
+      "Avatar": "images/beer.jpg",
+      "Price": "10000",
+      "id": 10
+    },
+    {
+      "Name": "Sinh tố Bơ",
+      "Avatar": "images/bo.jpg",
+      "Price": "30000",
+      "id": 11
+    },
+    {
+      "Name": "Sting Espresso",
+      "Avatar": "images/sting.jpg",
+      "Price": "15000",
+      "id": 12
+    },
+    {
+      "Name": "Sinh tố Kiwi",
+      "Avatar": "images/kiwi.jpg",
+      "Price": "35000",
+      "id": 13
+    },
+    {
+      "Name": "Sữa chua Mít",
+      "Avatar": "images/mit.jpg",
+      "Price": "20000",
+      "id": 14
+    },
+    {
+      "Name": "Trà sữa",
+      "Avatar": "images/trasua.jpg",
+      "Price": "35000",
+      "id": 15
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+.error{
+    color: red;
+}
+body{
+    background-image: url("/images/bgcafe.jpg");
+}
+.row{
+    color: rgb(20, 228, 141) ;
+    font-size: 20px;
+}
+h2 {
+    color: greenyellow;
+}
