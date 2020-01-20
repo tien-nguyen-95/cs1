@@ -13,7 +13,7 @@ menu.drawTable = function(){
                         "<td>"+ (i+1) +"</td>"+
                         "<td>" + v.Name + "</td>"+
                         "<td><img src='"+ v.Avatar +"' width='60px' height='50px' /></td>"+
-                        "<td>"+ v.Price +"</td>"+
+                        "<td>"+ v.Price +" VND</td>"+
                         "<td>"+
                             "<a href='javascript:;' title='Edit this item' onclick='menu.get("+ v.id +
                                 ")'><i class='fa fa-edit' style='font-size:25px; color:green; margin:5px;'></i></a> " +
